@@ -3,9 +3,10 @@
 #   - name: "check_color_tags_name"
 #     class_name: "ColorTagsCheck"
 #     file_path: "tags_check.py"
-# queries:
-#   - name: tags_query
-#     file_path: "tags_query.gql"
+
+queries:
+  - name: tags_query
+    file_path: "tags_query.gql"
 
 jinja2_transforms:
   - name: my-jinja2-transform # Unique name for your transform
