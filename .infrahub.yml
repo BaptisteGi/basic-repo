@@ -1,8 +1,14 @@
 ---
-check_definitions:
-  - name: "check_color_tags_name"
-    class_name: "ColorTagsCheck"
-    file_path: "tags_check.py"
+# check_definitions:
+#   - name: "check_color_tags_name"
+#     class_name: "ColorTagsCheck"
+#     file_path: "tags_check.py"
 # queries:
-#   - name: tags_check
+#   - name: tags_query
 #     file_path: "tags_query.gql"
+
+jinja2_transforms:
+  - name: my-jinja2-transform # Unique name for your transform
+    description: "short description" # (optional)
+    query: "tags_query" # Name or ID of the GraphQLQuery
+    template_path: "tags_tpl.j2" # Path to the main Jinja2 template
